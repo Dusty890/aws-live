@@ -185,12 +185,7 @@ def FetchData():
         dLocation = row[4]
         dSalary = row[5]
 
-        key = "emp-id-" + str(emp_id) + "_image_file.png"
-
-        s3_client = boto3.client('s3')
-        for item in s3_client.list_objects(Bucket=custombucket)['Contents']:
-            if item['Key'] == key:
-                url = s3_client.generate_presigned_url('get_object', Params={'Bucket': custombucket, 'Key': item['Key']})
+        url = "https://kohzhengbin-bucket.s3.amazonaws.com/emp-id-"+ str(emp_id) + "_image_file"
 
     except Exception as e:
         return str(e)
