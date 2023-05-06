@@ -1,6 +1,6 @@
-customhost = "employee.cc4pglg4b2qw.us-east-1.rds.amazonaws.com"
+customhost = "employee.caoiqxsajt8x.us-east-1.rds.amazonaws.com"
 customuser = "aws_user"
 custompass = "12345678"
 customdb = "employee"
-custombucket = "kohzhengbin-employee"
+custombucket = "kohzhengbin-bucket"
 customregion = "us-east-1"
