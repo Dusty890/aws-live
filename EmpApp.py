@@ -127,8 +127,8 @@ def UpEmp():
         emp_name = "" + first_name + " " + last_name
 
         if emp_image_file.filename != "":
-            key = "emp-id-" + str(emp_id) + "_image_file.png"
-            emp_image_file_name_in_s3 = "emp-id-" + str(emp_id) + "_image_file.png"
+            key = "emp-id-" + str(emp_id) + "_image_file"
+            emp_image_file_name_in_s3 = "emp-id-" + str(emp_id) + "_image_file"
             s3 = boto3.resource('s3')
 
             try:
